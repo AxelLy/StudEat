@@ -1,5 +1,8 @@
+<router-outlet></router-outlet>
+<!-- Router views go here-->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html"><img class="fit-picture" src="../assets/img/Studeat-logo.jpg"
+  <a class="navbar-brand" routerLink="home"><img class="fit-picture" src="../assets/img/Studeat-logo.jpg"
       alt="Accueil"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,11 +12,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 10%">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="Fonctionnement.html">Fonctionnement</a>
-
+        <a class="nav-link" routerLink="fonctionnement">Fonctionnement</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="PourquoiStudeat.html">Pourquoi STUD'EAT</a>
+        <a class="nav-link" routerLink="about">Pourquoi STUD'EAT</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Liens.html"> Liens</a>
@@ -22,7 +24,6 @@
       </li>
 
     </ul>
+
   </div>
 </nav>
-
-<app-fonctionnement></app-fonctionnement>
