@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AProposComponent } from './View/a-propos/a-propos.component';
 import { FonctionnementComponent } from './View/fonctionnement/fonctionnement.component';
+import { LinksComponent } from './View/links/links.component';
 
 const routes: Routes = [
   {path: 'home', component:AppComponent},
   {path: 'about', component:AProposComponent},
-  {path: 'fonctionnement', component:FonctionnementComponent}
+  {path: 'fonctionnement', component:FonctionnementComponent},
+  {path: 'links', component:LinksComponent}
 ];
 
 @NgModule({
@@ -15,4 +17,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [AProposComponent, FonctionnementComponent]
+export const routingComponents = [AProposComponent, FonctionnementComponent,LinksComponent]

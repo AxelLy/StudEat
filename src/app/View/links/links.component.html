@@ -1,25 +1,31 @@
 
-<div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-        <h3>Send me a message</h3>
-        <form role="form" id="contactForm">
-         
-        </form>
-    </div>
-    </div>
-
+<div class="container">
     <div class="row">
-        <div class="form-group col-sm-6">
-            <label for="name" class="h4">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-success text-white"><i class="fa fa-envelope"></i> Contactez-nous
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Votre nom (obligatoire)</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Votre e-mail (obligatoire)</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Sujet</label>
+                            <input type="text" class="form-control" id="sujet" aria-describedby="emailHelp" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea class="form-control" id="message" rows="6" required></textarea>
+                        </div>
+                        <div class="mx-auto">
+                        <button type="submit" class="btn btn-success text-right">Envoyez</button></div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="form-group col-sm-6">
-            <label for="email" class="h4">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="h4 ">Message</label>
-        <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-    </div>
-    <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
