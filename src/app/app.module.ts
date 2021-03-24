@@ -3,13 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConnexionComponent } from './View/connexion/connexion.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    ConnexionComponent
   ],
   imports: [
     BrowserModule,
