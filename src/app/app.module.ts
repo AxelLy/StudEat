@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConnexionComponent } from './View/connexion/connexion.component';
+import { InscriptionComponent } from './View/inscription/inscription.component';
 
 
 
@@ -11,7 +12,8 @@ import { ConnexionComponent } from './View/connexion/connexion.component';
   declarations: [
     AppComponent,
     routingComponents,
-    ConnexionComponent
+    ConnexionComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,
