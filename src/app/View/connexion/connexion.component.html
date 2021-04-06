@@ -2,7 +2,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
 <div class="wrapper fadeInDown" style="margin-top: 7%">
   <div id="formContent" >
     <!-- Tabs Titles -->
@@ -13,11 +12,17 @@
     </div>
 
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Identifiant">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Mot de passe">
-      <input type="submit" class="fadeIn fourth" value="Validez">
+    <form id="demo" (ngSubmit)="verifLogs()" >
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Identifiant" [(ngModel)]="rest.mail">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Mot de passe" [(ngModel)]="rest.mdp">
+      <input type="submit" class="fadeIn fourth" value="Validez"  >
+      
     </form>
+    <p id="demo" >Click me to change my text color.</p>
+    <p>
+      {{rest.mail}}
+    </p>
+   
 
     <!-- Remind Passowrd -->
     <div id="formFooter">

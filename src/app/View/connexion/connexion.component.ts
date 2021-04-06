@@ -1,4 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  RestaurateurService
+} from '../../Services/restaurateur.service';
+import {
+  Restaurateur
+} from '../../Models/restaurateur';
+import {
+  FormsModule
+} from '@angular/forms';
+
+import { RouterLink, RouterModule, Routes, RoutesRecognized, Router } from '@angular/router';
+import { AppRoutingModule} from '../../app-routing.module';
 
 @Component({
   selector: 'app-connexion',
@@ -7,9 +22,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConnexionComponent implements OnInit {
 
-  constructor() { }
+  //Declaration restaurateurs
+  Restaurateurs: Restaurateur[] = [];
+  rest = new Restaurateur();
 
-  ngOnInit(): void {
+  //Declaration connection
+  isOk: boolean;
+
+
+  constructor(private resto: RestaurateurService, private router: Router) {
+    this.isOk = false;
+  }
+
+  ngOnInit() {
+    this.getAllRestaurateurs();
+  }
+
+  //On recupere tous nos restaurateurs
+  getAllRestaurateurs() {
+    this.resto.getAll().subscribe(
+      data => {
+        this.Restaurateurs = data;
+      },
+      error => {
+        console.log(error);
+      });
+  }
+
+  verifLogs() {
+
+    this.Restaurateurs.forEach(r => { 
+      //On vérifie que notre restauratuers existe
+      if(r.mail == this.rest.mail && r.mdp == this.rest.mdp){
+        this.isOk = true;
+        console.log("les resto existe");
+        this.router.navigate(['inscription']);
+      }
+      else{
+        console.log("pas bon");
+      }
+    });
   }
 
 }

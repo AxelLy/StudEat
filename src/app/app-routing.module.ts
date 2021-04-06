@@ -7,13 +7,22 @@ import { LinksComponent } from './View/links/links.component';
 import { ConnexionComponent } from './View/connexion/connexion.component';
 import { InscriptionComponent } from './View/inscription/inscription.component';
 
+
+import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
+import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+
 const routes: Routes = [
   {path: 'home', component:AppComponent},
   {path: 'about', component:AProposComponent},
   {path: 'fonctionnement', component:FonctionnementComponent},
   {path: 'links', component:LinksComponent},
   {path: 'connexion', component:ConnexionComponent},
-  {path: 'inscription', component:InscriptionComponent}
+  {path: 'inscription', component:InscriptionComponent},
+  { path: '', redirectTo: 'tutorials', pathMatch: 'full' },
+  { path: 'tutorials', component: TutorialsListComponent }
+  // ,  { path: 'tutorials/:id', component: TutorialDetailsComponent },
+  // { path: 'add', component: AddTutorialComponent }
 ];
 
 @NgModule({
