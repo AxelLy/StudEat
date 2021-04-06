@@ -1,5 +1,6 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  "allowSyntheticDefaultImports": true,
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/e2e",
@@ -8,6 +9,7 @@
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+
   }
 }

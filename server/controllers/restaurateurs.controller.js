@@ -1,28 +1,28 @@
 const db = require("../models");
-const Tutorial = db.tutorials;
+const Restaurateur = db.restaurateurs;
 const Op = db.Sequelize.Op;
 
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
- 
+  
 };
 
 // Retrieve all Tutorials from the database.
 exports.findAll = (req, res) => {
-    console.log("test");
-  const title = req.query.title;
-  var condition = title ? { title: { [Op.like]: '%${title}%'}} : null;
-
-  Tutorial.findAll({ where: condition})
-    .then(data => {
-        res.send(data);
-    })
-    .catch(err => {
-        res.status(500).send({
-            message:
-            err.message || "Une erreur lors de la récupération des tutos."
-        })
-    })
+    console.log("restaurant bg");
+    const title = req.query.title;
+    var condition = title ? { title: { [Op.like]: '%${title}%'}} : null;
+  
+    Restaurateur.findAll({ where: condition})
+      .then(data => {
+          res.send(data);
+      })
+      .catch(err => {
+          res.status(500).send({
+              message:
+              err.message || "Une erreur lors de la récupération des tutos."
+          })
+      })
 };
 
 // Find a single Tutorial with an id
@@ -34,8 +34,6 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
   
 };
-
-
 
 // Delete a Tutorial with the specified id in the request
 exports.delete = (req, res) => {
