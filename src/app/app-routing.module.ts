@@ -6,11 +6,12 @@ import { FonctionnementComponent } from './View/fonctionnement/fonctionnement.co
 import { LinksComponent } from './View/links/links.component';
 import { ConnexionComponent } from './View/connexion/connexion.component';
 import { InscriptionComponent } from './View/inscription/inscription.component';
+import { HomeRestaurantComponent } from './View/home-restaurant/home-restaurant.component';
 
 
-import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
-import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
-import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+// import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+// import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
+// import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
 
 const routes: Routes = [
   {path: 'home', component:AppComponent},
@@ -19,8 +20,9 @@ const routes: Routes = [
   {path: 'links', component:LinksComponent},
   {path: 'connexion', component:ConnexionComponent},
   {path: 'inscription', component:InscriptionComponent},
-  { path: '', redirectTo: 'tutorials', pathMatch: 'full' },
-  { path: 'tutorials', component: TutorialsListComponent }
+  // { path: '', redirectTo: 'tutorials', pathMatch: 'full' },
+  // { path: 'tutorials', component: TutorialsListComponent },
+  { path: 'homeRestaurant', component: HomeRestaurantComponent }
   // ,  { path: 'tutorials/:id', component: TutorialDetailsComponent },
   // { path: 'add', component: AddTutorialComponent }
 ];

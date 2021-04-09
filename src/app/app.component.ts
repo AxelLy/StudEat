@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'studEat';
+  isConnect: string;
+
+
+  constructor(){
+    this.isConnect = "ko";
+    console.log("dsqd")
+  }
+  ngOnInit(): void {
+    localStorage["isConnect"] = "ko";
+    this.isConnect = localStorage["isConnect"];
+    console.log(this.isConnect);
+  }
+  
+
+
+
 }
