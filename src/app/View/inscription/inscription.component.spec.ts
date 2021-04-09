@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 import { InscriptionComponent } from './inscription.component';
 
