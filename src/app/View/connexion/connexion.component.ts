@@ -1,24 +1,7 @@
-import {
-  Component,
-  EventEmitter,
-  Input,
-  OnInit,
-  Output
-} from '@angular/core';
-import {
-  RestaurateurService
-} from '../../Services/restaurateur.service';
-import {
-  Restaurateur
-} from '../../Models/restaurateur';
-import {
-  FormsModule
-} from '@angular/forms';
-
-import {AppComponent} from '../../app.component';
-import { RouterLink, RouterModule, Routes, RoutesRecognized, Router } from '@angular/router';
-import { AppRoutingModule} from '../../app-routing.module';
-
+import { Component, OnInit } from '@angular/core';
+import { RestaurateurService } from '../../Services/restaurateur.service';
+import { Restaurateur } from '../../Models/restaurateur';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-connexion',
   templateUrl: './connexion.component.html',
@@ -33,7 +16,6 @@ export class ConnexionComponent implements OnInit {
   //Declaration connection
   isOk: boolean;
 
-  @Output() onHide = new EventEmitter<boolean>();
 
   constructor(private resto: RestaurateurService, private router: Router) {
     this.isOk = false;
