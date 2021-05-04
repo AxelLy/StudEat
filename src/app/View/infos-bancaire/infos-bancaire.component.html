@@ -1,9 +1,11 @@
+<p>marketing works!</p>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <link href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" rel="stylesheet">
+
 
 <div class="nav-side-menu"> 
     <div class="brand">Nom du restaurant</div>
@@ -18,7 +20,7 @@
                   </a>
                 </li>
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
                   <a href="#">Vos établissements</a>
                 </li>
              
@@ -30,7 +32,7 @@
            
 
 
-                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                <li data-toggle="collapse" data-target="#new" class="collapsed active">
                   <a href="#"> Informations bancaire </a>
                 </li>
               
@@ -55,18 +57,50 @@
             </ul>
      </div>
 </div>
-<body  style="margin-left: 400px; margin-top: 50px">
+<body  style="margin-left: 400px; margin-top: 50px; font-size: large;">
 
-<H1 style="margin-left: 35%"> NOM DU RESTAURANT</H1>
-  <div class="row" style="width: 98%;">
-    <div class="col bg-dark">Photo restaurant <br/><br/><br/><br/><br/><br/><br/><br/>d</div>
+<h1 style ="width: 500px; "> Vos Coordonnées Bancaires  </h1> <p style="text-decoration:overline; font-size: italic; color:green; font-size:smaller"> Versement hebdomadaire</p>
+
+
+<div class="container" style = "border:2px solid black; width: 800px; margin-left: 0px;" >
+
+
+    <div class="row" style="margin-top:10px">
+        <div class="col"><p style="font-weight: bold; text-decoration: underline;">DUPUY Gerard</p></div>
+      </div>
+
+ 
+    <div class="row">
+      <div class="col-4" style="font-weight: bold;">Carte bancaire</div>
+      <div class="col">4972 **** **** **** 1352</div>
+  </div>
+
+  <br/>
+  <div class="row">
+    <div class="col-4" style="font-weight: bold;">IBAN</div>
+    <div class="col">FR76 **** **** **** **** *** 231</div>
+</div>
+
+  <br/>
+    <div class="row">
+    <div class="col-4" style="font-weight: bold;">BIC/SWIFT</div>
+    <div class="col">CEPADEFRP112</div>
+  </div>
+
+  <br/>
+  <div class="row">
+    <div class="col-4" style="font-weight: bold;">RIB</div>
+    <div class="col">13135 ***** ******** 80</div>
+    <div class="col">
+      <button type="button" class="btn btn-dark">Modifier les informations</button>
     </div>
+  </div>
 
-    <div class="row" style="margin-top:40px">
-      <div class="col"> dsqdsq</div>
-    </div>
-</body>
+  
+  <br/>
 
+</div>
+  
 
 
 <router-outlet></router-outlet>

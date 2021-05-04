@@ -12,6 +12,9 @@ import { InscriptionComponent } from './View/inscription/inscription.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeRestaurantComponent } from './View/home-restaurant/home-restaurant.component';
+import { InfosBancaireComponent } from './View/infos-bancaire/infos-bancaire.component';
+import { MarketingComponent } from './View/marketing/marketing.component';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { HomeRestaurantComponent } from './View/home-restaurant/home-restaurant.
     // TutorialDetailsComponent,
     // TutorialsListComponent,
     HomeRestaurantComponent,
+    InfosBancaireComponent,
+    MarketingComponent
   ],
   imports: [
     BrowserModule,

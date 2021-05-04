@@ -7,7 +7,8 @@ import { LinksComponent } from './View/links/links.component';
 import { ConnexionComponent } from './View/connexion/connexion.component';
 import { InscriptionComponent } from './View/inscription/inscription.component';
 import { HomeRestaurantComponent } from './View/home-restaurant/home-restaurant.component';
-
+import { MarketingComponent} from './View/marketing/marketing.component';
+import { InfosBancaireComponent } from './View/infos-bancaire/infos-bancaire.component';
 
 // import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 // import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
@@ -22,7 +23,9 @@ const routes: Routes = [
   {path: 'inscription', component:InscriptionComponent},
   // { path: '', redirectTo: 'tutorials', pathMatch: 'full' },
   // { path: 'tutorials', component: TutorialsListComponent },
-  { path: 'homeRestaurant', component: HomeRestaurantComponent }
+  { path: 'homeRestaurant', component: HomeRestaurantComponent },
+  { path : 'marketing', component: MarketingComponent},
+  { path : 'infosbancaire', component: InfosBancaireComponent}
   // ,  { path: 'tutorials/:id', component: TutorialDetailsComponent },
   // { path: 'add', component: AddTutorialComponent }
 ];
