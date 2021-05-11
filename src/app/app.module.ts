@@ -14,6 +14,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeRestaurantComponent } from './View/home-restaurant/home-restaurant.component';
 import { InfosBancaireComponent } from './View/infos-bancaire/infos-bancaire.component';
 import { MarketingComponent } from './View/marketing/marketing.component';
+import { TempsPreparationComponent } from './View/temps-preparation/temps-preparation.component';
+import { InfosRestaurantComponent } from './View/infos-restaurant/infos-restaurant.component';
+import { CommentairesComponent } from './View/commentaires/commentaires.component';
+import { EtablissementsComponent } from './View/etablissements/etablissements.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { MarketingComponent } from './View/marketing/marketing.component';
     // TutorialsListComponent,
     HomeRestaurantComponent,
     InfosBancaireComponent,
-    MarketingComponent
+    MarketingComponent,
+    TempsPreparationComponent,
+    InfosRestaurantComponent,
+    CommentairesComponent,
+    EtablissementsComponent
   ],
   imports: [
     BrowserModule,

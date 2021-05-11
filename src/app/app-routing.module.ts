@@ -9,7 +9,10 @@ import { InscriptionComponent } from './View/inscription/inscription.component';
 import { HomeRestaurantComponent } from './View/home-restaurant/home-restaurant.component';
 import { MarketingComponent} from './View/marketing/marketing.component';
 import { InfosBancaireComponent } from './View/infos-bancaire/infos-bancaire.component';
-
+import { TempsPreparationComponent } from './View/temps-preparation/temps-preparation.component';
+import { InfosRestaurantComponent } from './View/infos-restaurant/infos-restaurant.component';
+import { CommentairesComponent } from './View/commentaires/commentaires.component';
+import { EtablissementsComponent } from './View/etablissements/etablissements.component';
 // import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 // import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
 // import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
@@ -25,9 +28,12 @@ const routes: Routes = [
   // { path: 'tutorials', component: TutorialsListComponent },
   { path: 'homeRestaurant', component: HomeRestaurantComponent },
   { path : 'marketing', component: MarketingComponent},
-  { path : 'infosbancaire', component: InfosBancaireComponent}
-  // ,  { path: 'tutorials/:id', component: TutorialDetailsComponent },
-  // { path: 'add', component: AddTutorialComponent }
+  { path : 'infosbancaire', component: InfosBancaireComponent},
+  { path : 'temps-preparation', component: TempsPreparationComponent},
+  { path : 'infosRestaurant', component: InfosRestaurantComponent},
+  { path : 'commentaires', component: CommentairesComponent},
+  { path : 'etablissements', component : EtablissementsComponent}
+
 ];
 
 @NgModule({

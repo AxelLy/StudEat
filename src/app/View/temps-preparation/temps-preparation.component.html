@@ -5,6 +5,7 @@
 
 <link href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" rel="stylesheet">
 
+
 <div class="nav-side-menu"> 
     <div class="brand">Nom du restaurant</div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
@@ -24,7 +25,7 @@
              
 
 
-                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <li data-toggle="collapse" data-target="#service" class="collapsed ">
                   <a href="#">Commentaires </a>
                 </li>  
            
@@ -40,7 +41,7 @@
                   </a>
                 </li>   
 
-                <li>
+                <li data-toggle="collapse" data-target="#service" class="collapsed active">
                   <a href="#">
                      Temps de préparation des plats
                   </a>
@@ -56,32 +57,57 @@
      </div>
 </div>
 <body  style="margin-left: 400px; margin-top: 50px">
+  
+<h1>Temps de préparation moyen des plats</h1>
+<br/>
+  <table class="table" style = "border:2px solid black; width: 1000px;" >
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Minutes</th>
+        <th scope="col">Jour</th>
+        <th scope="col">Heure début</th>
+        <th scope="col">Heure fin</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>30</td>
+        <td>Lundi</td>
+        <td>11h00</td>
+        <td>13h30</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>Mercredi</td>
+        <td>11h30</td>
+        <td>14h00</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Jeudi</td>
+        <td>12h00</td>
+        <td>14h00</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Vendredi</td>
+        <td>12h30</td>
+        <td>14h30</td>
+      </tr>
+   
+    </tbody>
+  </table>
 
-<H1 style="margin-left: 45%"> Santosha</H1>
-
-    <img class="fit-picture" src="../assets/img/santosha.jpg"
-    alt="Accueil" class="rounded mx-auto d-block" style="border: 1px solid" >
+  <button type="button" class="btn btn-dark">Ajouter un créneau</button>
 
 
-
-    <div class="row" style="margin-left:24.3%">
-      <div class="col"> 10 Rue des Filatiers, 31000 Toulouse</div>
-    </div>
-
-    <div class="row" style="margin-top:20px; font-size: large;">Activité récente :</div>
-      <br/>
-    <div class="row">
-      <!--Occupe 6 colonnes-->
-      <div class="col-3 "style="border: 3px solid">Nombre de visiteurs : 23 </div>
-      <div class="col-1 "></div>
-      <!--Occupe 4 colonnes-->
-      <div class="col-3" style="border: 3px solid">Nombre de ventes cette semaine : 12</div>
-      <div class="col-1 "></div>
-      <!--Occupe 8 colonnes-->
-      <div class="col-3 "style="border: 3px solid">Nombre de nouveaux clients : 3</div>
-    </div>
-</body>
-
-
-
+  <!-- <select name="jour" id="jour">
+    <option value="dog">Lundi</option>
+    <option value="cat">Mardi</option>
+    <option value="hamster">Mercredi</option>
+    <option value="parrot">Jeudi</option>
+    <option value="spider">Vendredi</option>
+    <option value="goldfish" selected ="selected">Samedi</option>
+    <option value="spider">Dimanche</option>
+</select> -->
 <router-outlet></router-outlet>

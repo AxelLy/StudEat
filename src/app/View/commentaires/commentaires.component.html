@@ -1,0 +1,151 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<div class="nav-side-menu"> 
+    <div class="brand">Nom du restaurant</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#" >
+               Statistiques
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                  <a href="#">Vos établissements</a>
+                </li>
+             
+
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed active ">
+                  <a href="#">Commentaires </a>
+                </li>  
+           
+
+
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"> Informations bancaire </a>
+                </li>
+              
+                <li>
+                  <a routerLink="connexion">
+                     Marketing
+                  </a>
+                </li>   
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#">
+                     Temps de préparation des plats
+                  </a>
+                </li>   
+                 <li>
+                  <a href="#">
+                  <i class="fas fa-user-tie fa-lg"></i> Informations du restaurant
+                  </a>
+                  </li>
+
+              
+            </ul>
+     </div>
+</div>
+
+
+<body  style="margin-left: 400px; margin-top: 50px">
+    <h1>Avis récents</h1>
+
+    <br/>
+  <table class="table" style = "border:2px solid black; width: 1000px;" >
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Utilisateur</th>
+        <th scope="col">Note</th>
+        <th scope="col">Commentaire</th>
+        <th scope="col">Commande réalisée</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MANCHE Valérie </td>
+        <td>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star"></span>
+        </td>
+        <td>"Bon restaurant. Pas chère et en bonne quantité."</td>
+        <td>Commande passée le 09/05/2021. <br/>
+            8,50€ au total<br/> 
+            <button type="button" class="btn btn-dark">Détails commande</button></td>
+      </tr>
+      <!---->
+      <tr>
+        <td>POIRIER Joris</td>
+        <td>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+        </td>
+        <td>"Extrêment satisfait. Prêt à notre arrivée et trés bon restaurant."</td>
+        <td>Commande passée le 07/05/2021. <br/>
+            14,50€ au total<br/> 
+            <button type="button" class="btn btn-dark">Détails commande</button></td>
+      </tr>
+      <!---->
+<tr>
+      <td>LECAPLA Baptiste</td>
+      <td>
+          <span class ="fas fa-star checked"></span>
+          <span class ="fas fa-star checked"></span>
+          <span class ="fas fa-star checked"></span>
+          <span class ="fas fa-star checked"></span>
+          <span class ="fas fa-star"></span>
+      </td>
+      <td></td>
+      <td>Commande passée le 04/05/2021. <br/>
+          6,50€ au total<br/> 
+          <button type="button" class="btn btn-dark">Détails commande</button></td>
+    </tr>
+<!---->
+    <tr>
+        <td>MARRON Julie</td>
+        <td>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+        </td>
+        <td>"Agréablement surprise."</td>
+        <td>Commande passée le 01/05/2021. <br/>
+            8,50€ au total<br/> 
+            <button type="button" class="btn btn-dark">Détails commande</button></td>
+      </tr>
+<!---->
+      <tr>
+        <td>CADEAU Pauline</td>
+        <td>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+            <span class ="fas fa-star checked"></span>
+        </td>
+        <td>"Super bon."</td>
+        <td>Commande passée le 26/04/2021. <br/>
+            7,50€ au total<br/> 
+            <button type="button" class="btn btn-dark">Détails commande</button></td>
+      </tr>
+      </tbody>
+

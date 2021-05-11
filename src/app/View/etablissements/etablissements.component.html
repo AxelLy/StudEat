@@ -5,6 +5,7 @@
 
 <link href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" rel="stylesheet">
 
+
 <div class="nav-side-menu"> 
     <div class="brand">Nom du restaurant</div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
@@ -18,13 +19,13 @@
                   </a>
                 </li>
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
                   <a href="#">Vos établissements</a>
                 </li>
              
 
 
-                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <li data-toggle="collapse" data-target="#service" class="collapsed ">
                   <a href="#">Commentaires </a>
                 </li>  
            
@@ -40,7 +41,7 @@
                   </a>
                 </li>   
 
-                <li>
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
                   <a href="#">
                      Temps de préparation des plats
                   </a>
@@ -55,33 +56,3 @@
             </ul>
      </div>
 </div>
-<body  style="margin-left: 400px; margin-top: 50px">
-
-<H1 style="margin-left: 45%"> Santosha</H1>
-
-    <img class="fit-picture" src="../assets/img/santosha.jpg"
-    alt="Accueil" class="rounded mx-auto d-block" style="border: 1px solid" >
-
-
-
-    <div class="row" style="margin-left:24.3%">
-      <div class="col"> 10 Rue des Filatiers, 31000 Toulouse</div>
-    </div>
-
-    <div class="row" style="margin-top:20px; font-size: large;">Activité récente :</div>
-      <br/>
-    <div class="row">
-      <!--Occupe 6 colonnes-->
-      <div class="col-3 "style="border: 3px solid">Nombre de visiteurs : 23 </div>
-      <div class="col-1 "></div>
-      <!--Occupe 4 colonnes-->
-      <div class="col-3" style="border: 3px solid">Nombre de ventes cette semaine : 12</div>
-      <div class="col-1 "></div>
-      <!--Occupe 8 colonnes-->
-      <div class="col-3 "style="border: 3px solid">Nombre de nouveaux clients : 3</div>
-    </div>
-</body>
-
-
-
-<router-outlet></router-outlet>

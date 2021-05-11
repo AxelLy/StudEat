@@ -20,7 +20,7 @@
                   </a>
                 </li>
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
                   <a href="#">Vos établissements</a>
                 </li>
              
@@ -36,13 +36,13 @@
                   <a href="#"> Informations bancaire </a>
                 </li>
               
-                <li>
+                <li data-toggle="collapse" data-target="#products" class="collapsed active">
                   <a routerLink="connexion">
                      Marketing
                   </a>
                 </li>   
 
-                <li>
+                <li data-toggle="collapse" data-target="#products" class="collapsed ">
                   <a href="#">
                      Temps de préparation des plats
                   </a>
@@ -61,7 +61,7 @@
   
 <h1>Promotions </h1>
 <br/>
-  <table class="table" style = "border:2px solid black; width: auto;" >
+  <table class="table" style = "border:2px solid black; width: 1000px;" >
     <thead class="thead-light">
       <tr>
         <th scope="col">Type d'offre</th>
@@ -76,7 +76,7 @@
     <tbody>
       <tr>
         <td>1 acheté 1 offert</td>
-        <td>En cours</td>
+        <td style="color:green">En cours</td>
         <td>26/04/12</td>
         <td>0</td>
         <td>0</td>
@@ -85,7 +85,7 @@
       </tr>
       <tr>
         <td>1 acheté 1 offert</td>
-        <td>Terminée</td>
+        <td style="color:red">Terminée</td>
         <td>23/04/12</td>
         <td>3</td>
         <td>1</td>
@@ -95,7 +95,7 @@
       <tr>
 
         <td>1 acheté 1 boisson offerte</td>
-        <td>Terminée</td>
+        <td style="color:red">Terminée</td>
         <td>20/04/12</td>
         <td>8</td>
         <td>4</td>
@@ -103,7 +103,7 @@
         <td>3.7/5</td>
       </tr>
       <tr>
-        <td>+</td>
+        <td><button type="button" class="btn btn-dark">Ajouter une promotion</button></td>
         <td></td>
         <td></td>
         <td></td>
