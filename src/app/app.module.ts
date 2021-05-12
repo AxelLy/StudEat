@@ -18,6 +18,7 @@ import { TempsPreparationComponent } from './View/temps-preparation/temps-prepar
 import { InfosRestaurantComponent } from './View/infos-restaurant/infos-restaurant.component';
 import { CommentairesComponent } from './View/commentaires/commentaires.component';
 import { EtablissementsComponent } from './View/etablissements/etablissements.component';
+import { NavMenuComponent } from './View/nav-menu/nav-menu.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { EtablissementsComponent } from './View/etablissements/etablissements.co
     TempsPreparationComponent,
     InfosRestaurantComponent,
     CommentairesComponent,
-    EtablissementsComponent
+    EtablissementsComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,

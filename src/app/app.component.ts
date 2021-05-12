@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ConnexionComponent } from './View/connexion/connexion.component'
+import {AuthService} from './Services/AuthService'
 
 @Component({
   selector: 'app-root',
@@ -11,10 +13,11 @@ export class AppComponent {
   isConnect: string;
 
 
-  constructor(){
+  constructor(public auth: AuthService){
     this.isConnect = "ko";
     console.log("dsqd")
   }
+
   ngOnInit(): void {
     localStorage["isConnect"] = "ko";
     this.isConnect = localStorage["isConnect"];

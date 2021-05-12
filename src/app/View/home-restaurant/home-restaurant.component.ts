@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeRestaurantComponent implements OnInit {
 
+  isLog:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.isLog = (localStorage.getItem('isLog') == "1");
+    console.log(this.isLog)
   }
 
 }
