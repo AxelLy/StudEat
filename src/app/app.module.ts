@@ -23,6 +23,8 @@ import { CreneauPlatComponent } from './View/creneau-plat/creneau-plat.component
 import { TempsPreparation2Component } from './View/temps-preparation2/temps-preparation2.component';
 import { AjoutPromotionComponent } from './View/ajout-promotion/ajout-promotion.component';
 import { Marketing2Component } from './View/marketing2/marketing2.component';
+import { StatistiquesComponent } from './View/statistiques/statistiques.component';
+import { ChartModule } from 'angular2-chartjs';
 
 
 @NgModule({
@@ -45,14 +47,15 @@ import { Marketing2Component } from './View/marketing2/marketing2.component';
     CreneauPlatComponent,
     TempsPreparation2Component,
     AjoutPromotionComponent,
-    Marketing2Component
+    Marketing2Component,
+    StatistiquesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
-
+    HttpClientModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

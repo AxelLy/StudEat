@@ -1,104 +1,105 @@
 <div style="height: 93vh;">
-<div *ngIf="!auth.isAuth">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html"><img class="fit-picture" src="../assets/img/Studeat-logo.jpg"
-        alt="Accueil"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div *ngIf="!auth.isAuth">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img class="fit-picture" src="../assets/img/Studeat-logo.jpg"
+          alt="Accueil"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 4%">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="fonctionnement">Fonctionnement</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="about">Pourquoi STUD'EAT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="links"> Liens</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="connexion" style="margin-left: 1100%"> Connexion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="margin-left: 1140%" routerLink="inscription"> Inscription</a>
-        </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 4%">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="fonctionnement">Fonctionnement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about">Pourquoi STUD'EAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="links"> Liens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="connexion" style="margin-left: 1100%"> Connexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="margin-left: 1140%" routerLink="inscription"> Inscription</a>
+          </li>
 
-      </ul>
+        </ul>
 
-    </div>
-  </nav>
-</div>
+      </div>
+    </nav>
+  </div>
 
 
 
-<div *ngIf="auth.isAuth">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+  <div *ngIf="auth.isAuth">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
-<link href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" rel="stylesheet">
 
-<div class="nav-side-menu"> 
-  <div class="brand"><a routerLink="homeRestaurant" style="color:green">Santosha</a></div>
-  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="nav-side-menu">
+      <div class="brand"><a routerLink="homeRestaurant" style="color:green">Santosha</a></div>
+      <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
       <div class="menu-list">
 
-          <ul id="menu-content" class="menu-content collapse out">
-              <li>
-                <a href="#" >
-             Statistiques
-                </a>
-              </li>
+        <ul id="menu-content" class="menu-content collapse out">
+          <li>
+            <a routerLink="stats">
+              Statistiques
+            </a>
+          </li>
 
-              <li data-toggle="collapse" data-target="#service" class="collapsed ">
-                <a routerLink="commentaires">Commentaires </a>
-              </li>  
-         
-
-
-              <li data-toggle="collapse" data-target="#new" class="collapsed">
-                <a routerLink="infosbancaire"> Informations bancaire </a>
-              </li>
-            
-              <li>
-                <a routerLink="marketing">
-                   Marketing
-                </a>
-              </li>   
-
-              <li data-toggle="collapse" data-target="#service" class="collapsed">
-                <a routerLink="temps-preparation">
-                   Temps de préparation des plats
-                </a>
-              </li>   
-               <li>
-                <a routerLink="infosRestaurant">
-                <i class="fas fa-user-tie fa-lg"></i> Informations du restaurant
-                </a>
-                </li>
-                <li>
-                  <a href="#">
-                  <i data-toggle="collapse" data-target="#service" class="collapsed" (click)="auth.signOut()">Deconnexion</i> 
-                  </a>
-                  </li>
-
-            
-          </ul>
-   </div>
-</div>
-<div style="margin-left: 1650px; margin-top: -5%;  position:absolute">   <img class="fit-picture" src="../assets/img/Studeat-logo.jpg"
-  alt="Accueil">  </div>
-<div style="margin-top:100px"></div>
-</div>
+          <li data-toggle="collapse" data-target="#service" class="collapsed ">
+            <a routerLink="commentaires">Commentaires </a>
+          </li>
 
 
 
+          <li data-toggle="collapse" data-target="#new" class="collapsed">
+            <a routerLink="infosbancaire"> Informations bancaire </a>
+          </li>
 
-<router-outlet></router-outlet>
+          <li>
+            <a routerLink="marketing">
+              Marketing
+            </a>
+          </li>
 
-<!-- Router views go here-->
+          <li data-toggle="collapse" data-target="#service" class="collapsed">
+            <a routerLink="temps-preparation">
+              Temps de préparation des plats
+            </a>
+          </li>
+          <li>
+            <a routerLink="infosRestaurant">
+              <i class="fas fa-user-tie fa-lg"></i> Informations du restaurant
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i data-toggle="collapse" data-target="#service" class="collapsed"
+                (click)="auth.signOut()">Deconnexion</i>
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div style="margin-left: 1650px; margin-top: -5%;  position:absolute"> <img class="fit-picture"
+        src="../assets/img/Studeat-logo.jpg" alt="Accueil"> </div>
+    <div style="margin-top:100px"></div>
+  </div>
+
+
+
+
+  <router-outlet></router-outlet>
+
+  <!-- Router views go here-->
