@@ -13,6 +13,10 @@ import { TempsPreparationComponent } from './View/temps-preparation/temps-prepar
 import { InfosRestaurantComponent } from './View/infos-restaurant/infos-restaurant.component';
 import { CommentairesComponent } from './View/commentaires/commentaires.component';
 import { EtablissementsComponent } from './View/etablissements/etablissements.component';
+import { CreneauPlatComponent} from './View/creneau-plat/creneau-plat.component';
+import { TempsPreparation2Component } from './View/temps-preparation2/temps-preparation2.component';
+import { AjoutPromotionComponent} from './View/ajout-promotion/ajout-promotion.component';
+import { Marketing2Component} from './View/marketing2/marketing2.component';
 // import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 // import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
 // import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
@@ -32,7 +36,11 @@ const routes: Routes = [
   { path : 'temps-preparation', component: TempsPreparationComponent},
   { path : 'infosRestaurant', component: InfosRestaurantComponent},
   { path : 'commentaires', component: CommentairesComponent},
-  { path : 'etablissements', component : EtablissementsComponent}
+  { path : 'etablissements', component : EtablissementsComponent},
+  {path : 'creneau', component: CreneauPlatComponent},
+  { path : 'temps-preparation2', component: TempsPreparation2Component},
+  { path : 'ajout-promotion', component: AjoutPromotionComponent},
+  { path : 'marketing2', component: Marketing2Component}
 
 ];
 
@@ -41,4 +49,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [AProposComponent, FonctionnementComponent,LinksComponent,ConnexionComponent]
+export const routingComponents = [AProposComponent, FonctionnementComponent,LinksComponent,ConnexionComponent, MarketingComponent]

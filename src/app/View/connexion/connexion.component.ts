@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { RestaurateurService } from '../../Services/restaurateur.service';
 import { Restaurateur } from '../../Models/restaurateur';
 import { Router } from '@angular/router';
-import { AuthService } from 'src/app/Services/AuthService';
+import { AuthService } from 'src/app/Services/auth.service';
+
+
 @Component({
   selector: 'app-connexion',
   templateUrl: './connexion.component.html',

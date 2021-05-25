@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ConnexionComponent } from './View/connexion/connexion.component'
-import {AuthService} from './Services/AuthService'
+import {AuthService} from './Services/auth.service'
 
 @Component({
   selector: 'app-root',

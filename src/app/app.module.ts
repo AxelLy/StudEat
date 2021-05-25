@@ -19,6 +19,10 @@ import { InfosRestaurantComponent } from './View/infos-restaurant/infos-restaura
 import { CommentairesComponent } from './View/commentaires/commentaires.component';
 import { EtablissementsComponent } from './View/etablissements/etablissements.component';
 import { NavMenuComponent } from './View/nav-menu/nav-menu.component';
+import { CreneauPlatComponent } from './View/creneau-plat/creneau-plat.component';
+import { TempsPreparation2Component } from './View/temps-preparation2/temps-preparation2.component';
+import { AjoutPromotionComponent } from './View/ajout-promotion/ajout-promotion.component';
+import { Marketing2Component } from './View/marketing2/marketing2.component';
 
 
 @NgModule({
@@ -37,7 +41,11 @@ import { NavMenuComponent } from './View/nav-menu/nav-menu.component';
     InfosRestaurantComponent,
     CommentairesComponent,
     EtablissementsComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    CreneauPlatComponent,
+    TempsPreparation2Component,
+    AjoutPromotionComponent,
+    Marketing2Component
   ],
   imports: [
     BrowserModule,

@@ -43,11 +43,42 @@
         <td>12h30</td>
         <td>14h30</td>
       </tr>
-   
+      <tr>
+          <td>
+         <select name="jour" id="jour" style="font-style: italic; color:#808080">
+            <option value="dog">15</option>
+            <option value="cat">30</option>
+            <option value="hamster">45</option>
+            <option value="parrot">60</option>
+            </select>
+        </td>
+          <td>
+        <select name="jour" id="jour" style="font-style: italic; color:#808080">
+            <option value="dog">Lundi</option>
+            <option value="cat">Mardi</option>
+            <option value="hamster">Mercredi</option>
+            <option value="parrot">Jeudi</option>
+            <option value="spider">Vendredi</option>
+            <option value="goldfish" selected ="selected">Samedi</option>
+            <option value="spider">Dimanche</option>
+        </select>
+    </td>
+          <td> <input type="text" value="12h00" style="font-style: italic; color:#808080"></td>
+          <td> <input type="text" value ="14h00" style="font-style: italic;color:#808080"></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td> </td>
+        <td> &nbsp; &nbsp; &nbsp; <button type="button" class="btn btn-success" (click)="afficherCrenaux()">&nbsp;Valider &nbsp;</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-danger" (click)="retourTemps()">Annuler</button></td>
+      </tr>
+
+      
     </tbody>
   </table>
 
-  <button type="button" class="btn btn-dark" (click)="ajoutCreneau()">Ajouter un créneau</button> 
+  <button type="button" class="btn btn-dark">Ajouter un créneau</button>
 
 
   <!-- <select name="jour" id="jour">

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
@@ -8,6 +9,10 @@ export class AuthService {
 
   
   public isAuth:Boolean = false;
+
+  constructor(private router: Router){
+    
+  }
 
   signIn() {
     return new Promise(
@@ -24,5 +29,7 @@ export class AuthService {
 
   signOut() {
     this.isAuth = false;
+    this.router.navigate(["home"]);
   }
 }
+

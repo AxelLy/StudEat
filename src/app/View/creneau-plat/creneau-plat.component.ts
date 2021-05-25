@@ -5,19 +5,22 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { AppModule} from 'src/app/app.module';
 
 @Component({
-  selector: 'app-temps-preparation',
-  templateUrl: './temps-preparation.component.html',
-  styleUrls: ['./temps-preparation.component.css']
+  selector: 'app-creneau-plat',
+  templateUrl: './creneau-plat.component.html',
+  styleUrls: ['./creneau-plat.component.css']
 })
-export class TempsPreparationComponent implements OnInit {
+export class CreneauPlatComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  ajoutCreneau():void{
-    this.router.navigateByUrl('/creneau');
+  public afficherCrenaux(): void {
+    this.router.navigateByUrl('/temps-preparation2');
   }
 
+  public retourTemps(): void{
+    this.router.navigateByUrl('/temps-preparation');
+  }
 }

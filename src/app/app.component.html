@@ -1,3 +1,4 @@
+<div style="height: 93vh;">
 <div *ngIf="!auth.isAuth">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html"><img class="fit-picture" src="../assets/img/Studeat-logo.jpg"
@@ -32,6 +33,7 @@
 </div>
 
 
+
 <div *ngIf="auth.isAuth">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -40,75 +42,63 @@
 
 <link href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" rel="stylesheet">
 
-<div class="nav-side-menu">
-    <div class="brand">Brand Logo</div>
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-  
-        <div class="menu-list">
-  
-            <ul id="menu-content" class="menu-content collapse out">
+<div class="nav-side-menu"> 
+  <div class="brand"><a routerLink="homeRestaurant" style="color:green">Santosha</a></div>
+  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+      <div class="menu-list">
+
+          <ul id="menu-content" class="menu-content collapse out">
+              <li>
+                <a href="#" >
+             Statistiques
+                </a>
+              </li>
+
+              <li data-toggle="collapse" data-target="#service" class="collapsed ">
+                <a routerLink="commentaires">Commentaires </a>
+              </li>  
+         
+
+
+              <li data-toggle="collapse" data-target="#new" class="collapsed">
+                <a routerLink="infosbancaire"> Informations bancaire </a>
+              </li>
+            
+              <li>
+                <a routerLink="marketing">
+                   Marketing
+                </a>
+              </li>   
+
+              <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <a routerLink="temps-preparation">
+                   Temps de préparation des plats
+                </a>
+              </li>   
+               <li>
+                <a routerLink="infosRestaurant">
+                <i class="fas fa-user-tie fa-lg"></i> Informations du restaurant
+                </a>
+                </li>
                 <li>
                   <a href="#">
-                  <i class="fas fa-tachometer-alt fa-lg"></i> Dashboard
-                  </a>
-                </li>
-
-                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                  <a href="#"><i class="fab fa-studiovinari fa-lg"></i> UI Elements <span class="arrow"></span></a>
-                </li>
-                <ul class="sub-menu collapse" id="products">
-                    <li class="active"><a href="#">CSS3 Animation</a></li>
-                    <li><a href="#">General</a></li>
-                    <li><a href="#">Buttons</a></li>
-                    <li><a href="#">Tabs & Accordions</a></li>
-                    <li><a href="#">Typography</a></li>
-                    <li><a href="#">FontAwesome</a></li>
-                    <li><a href="#">Slider</a></li>
-                    <li><a href="#">Panels</a></li>
-                    <li><a href="#">Widgets</a></li>
-                    <li><a href="#">Bootstrap Model</a></li>
-                </ul>
-
-
-                <li data-toggle="collapse" data-target="#service" class="collapsed">
-                  <a href="#"><i class="fab fa-fort-awesome-alt fa-lg"></i> Services <span class="arrow"></span></a>
-                </li>  
-                <ul class="sub-menu collapse" id="service">
-                  <li>New Service 1</li>
-                  <li>New Service 2</li>
-                  <li>New Service 3</li>
-                </ul>
-
-
-                <li data-toggle="collapse" data-target="#new" class="collapsed">
-                  <a href="#"><i class="fab fa-pagelines fa-lg"></i> New <span class="arrow"></span></a>
-                </li>
-                <ul class="sub-menu collapse" id="new">
-                  <li>New New 1</li>
-                  <li>New New 2</li>
-                  <li>New New 3</li>
-                </ul>
-
-
-                 <li>
-                  <a href="#">
-                  <i class="fas fa-user-tie fa-lg"></i> Profile
+                  <i data-toggle="collapse" data-target="#service" class="collapsed" (click)="auth.signOut()">Deconnexion</i> 
                   </a>
                   </li>
 
-                 <li>
-                  <a href="#">
-                  <i class="fa fa-users fa-lg"></i> Users
-                  </a>
-                </li>
-            </ul>
-     </div>
+            
+          </ul>
+   </div>
 </div>
-
+<div style="margin-left: 1650px; margin-top: -5%;  position:absolute">   <img class="fit-picture" src="../assets/img/Studeat-logo.jpg"
+  alt="Accueil">  </div>
+<div style="margin-top:100px"></div>
 </div>
 
 
 
 
 <router-outlet></router-outlet>
+
 <!-- Router views go here-->
